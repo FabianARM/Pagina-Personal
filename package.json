@@ -1,0 +1,16 @@
+{
+  "name": "pagina-personal",
+  "version": "1.0.0",
+  "description": "Pagina personal para el trabajo del curso de desarrollo web",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fabian",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.0",
+    "popper.js": "^1.16.1"
+  }
+}

@@ -1,0 +1,129 @@
+
+$primary-color: #52D1DC;
+$secondary-color: #475b5a;
+$terciary-color: #8d8e8e;
+
+body{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, black, white);
+  background: url(../Images/forest-5028943_1280.png) no-repeat fixed;
+  background-size: cover;
+
+}
+.pagina {
+  margin: 0 10%;
+  position: absolute;
+}
+
+nav {
+  background: url(scallop.png) repeat-x;
+}
+.barra-principal {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 12px 0 0 0;
+  background-color: $primary-color;
+  height: 5%;
+  border-radius: 5px;
+  padding: 5px 0;
+  border-bottom: #e7d39f 1px solid;
+}
+
+.menu-nav-button{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+.imagen-principal{
+    width: 100%;
+    height: 15vw;
+}
+
+.cuerpo {
+  display: flex;
+  flex-direction: column;
+  background-color: $terciary-color;
+  border-radius: 5px;
+  padding: 0 5px;
+  }
+
+.texto {
+  line-height: 1.2;
+  margin: 1em;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.side-box {
+  background-color: $secondary-color;
+  border: #ffffff 1px solid;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}
+
+.imagen {
+  width: 40%;
+}
+
+.pie {
+  background-color: #c2f0fc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+.first-col, .second-col {
+  align-items: center;
+}
+@media only screen and (min-width: 700px) {
+
+  .barra-principal {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .texto{
+    width: 60%;
+  }
+  .cuerpo {
+    flex-direction: row;
+  }
+  .side-box{
+    width: auto;
+  }
+  .sidebar {
+    width: 25%;
+    justify-self: end;
+    flex-direction: column;
+    margin: 0 0 0 15%;
+    padding-right: 0px;
+  }
+  .first-col, .second-col {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+}
